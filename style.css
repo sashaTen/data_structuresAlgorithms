@@ -3,4 +3,7 @@ body{
     text-transform: capitalize;
     font-size: 1.2rem;
     color: purple;
+    width :   250px;
+    background-color: aquamarine;
+
 }
