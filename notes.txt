@@ -1,0 +1,47 @@
+first    i   will    learn    most  pupular   algorithms  from    video   
+i will   do   examples   and  practice problems     fron   geek  for  geeks 
+
+
+
+geekfor   geeks 
+1) Array
+2) String
+4) Searching Algorithm
+5) Sorting Algorithm
+12) Recursion
+6) Divide and Conquer Algorithm
+3) Linked List
+7) Stack
+8) Queue
+9) Tree Data Structure
+10) Graph Data Structure
+11) Greedy Mehtodology
+13) Backtracking Algorithm
+14) Dynamic Programming
+
+
+
+russian    blogger
+ 
+00:00 - План на урок
+01:20 - Что такое алгоритм? Оценка сложности
+06:30 - Линейный поиск
+08:20 - Бинарный поиск. Итеративный подход (цикл)
+12:05 - Сортировка выбором. SelectionSort
+15:23 - Сортировка пузырьком. BubbleSort
+17:40 - Рекурсия. Рекурсивные функции. Факториал. Числа Фибоначчи
+20:15 - Быстрая сортировка. Сортировка Хоара
+27:40 - Графы. Поиск в ширину
+29:19 - Структура данных Очередь
+32:37 - Матрица смежности
+33:05 - Алгоритм Дейкстры для поиска кратчайшего пути
+41:00 - Рекурсивный обход дерева n-размерности
+43:04 - Итеративный обход дерева n-размерности
+43:20 - Структура данных Стек
+45:15 - Кеширование вычислений
+48:11 - Массивы. Сложность основных операций
+49:09 - Связный список. Простая реализация и теория
+53:31 - Бинарное дерево поиска. Простая реализация и теория
+58:01 - Set и Map
+
+
