@@ -43,5 +43,5 @@ russian    blogger
 49:09 - Связный список. Простая реализация и теория
 53:31 - Бинарное дерево поиска. Простая реализация и теория
 58:01 - Set и Map
-
+  Focus only on ds and algorithms  for the next 6 month
 
