@@ -45,3 +45,53 @@ russian    blogger
 58:01 - Set и Map
   Focus only on ds and algorithms  for the next 6 month
 
+
+
+
+
+
+///  
+long  lasting  plan    :  
+not to   forget the  react  
+you   have   to   work   on  long  term  with  
+furniture  project
+ or  some  big   API 
+ ///////////
+
+ rewrite   all   notes   
+ 3  based  on  grokking  and  dsa    books    to  make    curriculum 
+ 
+
+
+
+
+
+
+ //    my  plan  is  to   learn  from  grokking  algorithms's
+ curriculum :
+ you    take    only topics  from      grokking  books
+ aka  algorithms  used  in   book  and  Data Structures  
+ used  in the  book 
+ and then   for  practice  use the problems  from  geek  for  geeks
+
+
+ then    finish  the rest  of data Structures
+
+
+
+
+
+
+ study  one chapter   of  grokking  -  practice  in geekforgeeks
+
+
+
+
+
+
+
+
+
+
+
+
