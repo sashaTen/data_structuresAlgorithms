@@ -60,3 +60,16 @@ elt.innerHTML =   factorial(6)
 
 
 
+
+///    what    i  have  noticed  in recursive   proccess   
+/*    
+it is   like the    for  loop   but  slightly   different   
+you return    the  condition   and 
+i++    -    the  variation  is   
+how your   variable   will be changed  is inside of the  function
+like   factorial(num -1)
+
+*/
+
+
+
