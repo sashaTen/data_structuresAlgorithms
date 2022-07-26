@@ -1,41 +1,30 @@
-const  elt    =  document.getElementById('id')
-let   list   =    [0,1,2,399,66,33,88,7,10  ,3,4,5 -999];
-
-const    findSmallest=(arr)=>{
-    let  smallest_number =     arr[0]
-    let   index_of_smallest  =   0
-    for(let  i=0  ; i  <   arr.length   ;  i ++){
-    if(arr[i]< smallest_number){
-        smallest_number =   arr[i]
-        index_of_smallest =    i 
-    }    
-    }
-    return   index_of_smallest
-}
+/*
+//////////here  is   my study   plan  for   DSA   : 
 
 
-function  selectionSort(list){
-    let    sorted   =   []
+1  linked  list   :   perfrom  other   opertaions  like  delete   
+and  some   other    stuff 
+2  in geekforgeeks   you  just   google  for  problems you need
+then   just  copy  the title of   problem  and you will  find 
+geek for  geeks  page  with  solutions  in case  you  cant  solve it
+solve 5-10problems  in row . and  move on  ot  another   topic
 
-for(let  i  = 0;  i <   list.length  ; i++){
-    swap(list ,  findSmallest(list) )
-    sorted.push(
+3  binary  search  ,   selection  sort ,  recursion  problems 
+4  javascript Program For Recursive Selection Sort For Singly Linked List – Swapping Node Links
 
-        list.shift()
-    )
+5  after  that   return   to reading  the book
 
-}
-
-return   sorted
-
-}
+////////////   my  plan  for  today   :
 
 
-function   swap(list   ,     index){
-    let  temp   =    list[index];
-    list[index] =    list[0]
-    list[0] =     temp
-    return list
-}
-elt.innerHTML = selectionSort(list)
+1   army  friends 
+2   about  virus   and etc   ask  hospitals  and  airways 
 
+
+
+
+
+
+
+
+*/
