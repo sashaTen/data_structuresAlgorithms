@@ -1,75 +1,95 @@
-const  elt   =  document.getElementById('id')
+// count  down 
+
+/*
+1   10 log   it  
+2   9  (number -1)log  it
+if   number   =  ===0     log it and  return 
 
 
+*/
 
-//    multiplication     recursion
-/*   
+function    countDown(number){
 
-function       factorial(num){
-    if(num===6){
-        return    num
+    if(number===1){
+        console.log(number);
+        return
     }
-  return    num *    factorial(num+1)
+    console.log(number);
+   return  countDown(number-1)
 }
-elt.innerHTML =     factorial(1)
 
 
-*/
-
-
-
-/*  
-input     number   into   function 
-if   number   ===0   return   sum
-sum =    1   in  the   beginning
-
-
-
-sum =   num *    factorial(num-1)
-
+//countDown(10)
+//  number to  power   
+/*
+ex  :     (2,5)
+2**2*2*2*2
 
 */
-
-
-
-
-//number   grows   1 * 2 * 3 *4
-/*   
-
-
-
-
-*/
-
-
-function  factorial(num){
-    let  sum   = 1;
-    if(num===0){
-        return sum
+function   exponent(base    ,  power){
+    if(power===1){
+        return  base
     }
-
-   return     sum*=num*factorial(num-1)
-
-
-
-
+return    base*   exponent(base ,     power-1)
 
 }
 
-elt.innerHTML =   factorial(6)
+
+
+
+//console.log(exponent(2,30));
+
+/*   
+increassing   order   numbers   print
+
+10
+0
+1
+2
+3  ... 10
+
+*/
+
+
+function    increaseOrder(number ,     limit){
+    if(number<=limit){
+
+        console.log(number);
+        increaseOrder(number+1 , limit)
+    }else   return 
+}
 
 
 
 
-///    what    i  have  noticed  in recursive   proccess   
+
+
 /*    
-it is   like the    for  loop   but  slightly   different   
-you return    the  condition   and 
-i++    -    the  variation  is   
-how your   variable   will be changed  is inside of the  function
-like   factorial(num -1)
 
+find  the  factorial 
+5!
+1*2*3*4*5
 */
 
 
 
+
+
+function    factorial(number){
+
+
+    if(number===1){
+        return   1
+    }
+
+
+    return    number*   factorial(number-1)
+}
+
+
+
+
+console.log(
+    
+    factorial(12)
+);
