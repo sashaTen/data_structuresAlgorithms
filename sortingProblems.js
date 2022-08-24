@@ -1,60 +1,41 @@
-let  list  =   [40,52,9,30,20000,7000,5,81,9];
-let   length = list.length
+///Input: prices = [7,1,5,3,6,4]
 
 
 
-function   PutTheBiggestAtIndex0(arr){
-        let  biggest =  arr[0]
-        let   index_of_biggest =    0
-        let temp
-        for(let   i  = 0 ; i  <  arr.length   ;   i++){
-        if(biggest  <  arr[i]){
-        biggest =   arr[i]
-        index_of_biggest =  i
+/*
+1 find   the chepeapest   
+2 find  the the   biggest 
+3  return  find    index   of the   biggest  dat   after   cheapest 
+if    (after   cheapest  no    bigger  then  return 'no  profit')
+
+
+*/
+const     prices = [77,1,5,36 , 0 ,    100,80 ,   50]
+
+
+function     findBestDay(arr){
+      let   min =    0
+      for(let  i =0 ;  i <   arr.length  ;  i ++){
+            if (arr[i]<   arr[min]){
+                  min =    i 
+            }
+      }
+      let   max =    min 
+
+    for (let i =   min;  i  <     arr.length ;  i  ++){
+        if (arr[i]>   arr[max]){
+            max  =    i
         }
-        }
-       temp  =  arr[0]
-       arr[0] =      arr[index_of_biggest]
-       arr[index_of_biggest] =  temp
-        /*  
-        ex :  5th  element  is the  biggest  
-       swap   5th  and  0th
-       temp  =  arr[0]
-       arr[0] =      arr[5]
-       arr[5] =  arr[0]
 
-        */
-        //return   index  works well
-        return   arr
-}
-
-
-
-
-function  SelectionSort(arr){
-    
-   let   sorted =  []
-   let count =  0
-
-   for(let i  =0 ;    i <length;  i++){
-    
-    sorted.push(PutTheBiggestAtIndex0(arr).shift())
-   }
-   /*
-   sorted.push(
-   PutTheBiggestAtIndex0(arr).shift()
-   )
-     //   
-     create   []   
-     put  the  biggest  in  front
-     [].push(unsorted.shift()) 
-     
-     */
-     
+    }
           
-               
+       return    max
 
-    console.log(sorted);
 }
 
-   SelectionSort(list)
+
+
+console.log(
+      findBestDay(prices)
+
+);
