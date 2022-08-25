@@ -1,31 +1,5 @@
-// count  down 
-
 /*
-1   10 log   it  
-2   9  (number -1)log  it
-if   number   =  ===0     log it and  return 
 
-
-*/
-
-function    countDown(number){
-
-    if(number===1){
-        console.log(number);
-        return
-    }
-    console.log(number);
-   return  countDown(number-1)
-}
-
-
-//countDown(10)
-//  number to  power   
-/*
-ex  :     (2,5)
-2**2*2*2*2
-
-*/
 function   exponent(base    ,  power){
     if(power===1){
         return  base
@@ -34,21 +8,6 @@ return    base*   exponent(base ,     power-1)
 
 }
 
-
-
-
-//console.log(exponent(2,30));
-
-/*   
-increassing   order   numbers   print
-
-10
-0
-1
-2
-3  ... 10
-
-*/
 
 
 function    increaseOrder(number ,     limit){
@@ -63,13 +22,6 @@ function    increaseOrder(number ,     limit){
 
 
 
-
-/*    
-
-find  the  factorial 
-5!
-1*2*3*4*5
-*/
 
 
 
@@ -91,5 +43,99 @@ function    factorial(number){
 
 console.log(
     
-    factorial(12)
+   // factorial(12)
 );
+
+
+
+
+[1,2,3,6]
+
+
+
+
+
+function   sumArr(arr){
+    if(arr.length ===0){
+        return
+    }
+
+
+    
+    return      arr.shift()
+}
+
+let  list   =   [11,22,33,44,55,66,77]
+sumArr(list) 
+sumArr(list) 
+sumArr(list) 
+sumArr(list) 
+sumArr(list) 
+
+sumArr(list) 
+
+
+
+console.log(
+    sumArr(list)
+    
+);
+
+
+
+/*
+
+
+*/
+function   countDown(number){
+    console.log(number);
+    if(number===0){
+        return    0
+    }
+    else    {
+        countDown(number- 1)
+    }
+}
+
+
+
+function    increaseOrder(number ,    target){
+    if(number===target){
+        return   number
+    }
+    else   {
+        console.log(number);
+        increaseOrder(number+=1 ,      target)
+}
+    
+}
+
+function   exponent(base ,   power){
+      if(power===1){
+        return    base
+      }  
+      else     {
+    return base   =    base*exponent(base,     power   -1)     
+      }
+    }
+
+  
+
+
+function   factorial(number){
+if(number===1){
+    return   1
+}else    {
+    return   number*    factorial(number-=1)
+}
+}
+
+
+function   sumArr(arr){
+    if(arr.length===0){
+        return   0
+    }
+    else   {
+        return arr.pop()+   sumArr(arr)
+    }
+}
