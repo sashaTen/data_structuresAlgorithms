@@ -31,7 +31,7 @@ function bblSort(arr){
       }
     }
     // Print the sorted array
-    console.log(arr);
+   console.log(arr);
    }
     
     
@@ -40,4 +40,40 @@ function bblSort(arr){
     
     
    // Now pass this array to the bblSort() function
-   bblSort(arr);
+   //bblSort(arr);
+
+
+
+
+
+
+
+   let   list   =  [1,2,3,6,50 ,0,-9,-5,5,5,5];
+   console.log(
+
+       list.length -4
+   );
+
+function    bubbleSort(arr){
+
+
+    for(let i   =0 ; i   <   arr.length  ;  i++){
+
+        for(let   j  =0 ; j  <    arr.length-i-1 ;  j++)
+
+            if(arr[j]>arr[j+1]){
+                let   temp  =   arr[j]
+                arr[j] =   arr[j+1]
+                arr[j+1] =   temp
+
+            }
+        }
+        console.log(arr);
+    }
+
+
+
+bubbleSort(list)
+
+
+
