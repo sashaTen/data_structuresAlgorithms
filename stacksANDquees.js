@@ -1,7 +1,109 @@
-const     stack=()=>{
-    return      "stack   dsa"
+/*
+// program to implement stack data structure
+class Stack {
+    constructor() {
+        this.items = [];
+    }
+    
+    // add element to the stack
+    add(element) {
+        return this.items.push(element);
+    }
+    
+    // remove element from the stack
+    remove() {
+        if(this.items.length > 0) {
+            return this.items.pop();
+        }
+    }
+    
+    // view the last element
+    peek() {
+        return this.items[this.items.length - 1];
+    }
+    
+    // check if the stack is empty
+    isEmpty(){
+       return this.items.length == 0;
+    }
+   
+    // the size of the stack
+    size(){
+        return this.items.length;
+    }
+ 
+    // empty the stack
+    clear(){
+        this.items = [];
+    }
 }
-console.log(
-    stack()
 
+let stack = new Stack();
+stack.add(1);
+stack.add(2);
+stack.add(4);
+stack.add(8);
+console.log(stack.items);
+
+stack.remove();
+console.log(stack.items);
+
+console.log(stack.peek());
+
+console.log(stack.isEmpty());
+
+console.log(stack.size());
+
+stack.clear();
+console.log(stack.items);
+
+
+*/
+
+
+
+
+
+class     Stack{
+ constructor(){
+    this.items   = []
+ }   
+
+ add(number){
+      this.items.push(number)
+ }
+ remove(){
+    if(this.items.length> 0){
+
+        this.items.pop()    
+    }
+}
+clear(){
+   this.items=[]   
+
+}
+
+peek(){
+        let    length  =    this.items.length
+       return this.items[length]
+}
+
+}
+
+
+
+let   stacks    =    new  Stack()
+stacks.add(85)
+stacks.add(98)
+stacks.add(50)
+stacks.add(9666)
+stacks.remove()
+stacks.remove()
+stacks.clear()
+stacks.add(0)
+stacks.add(75)
+console.log(
+    stacks.peek()
 );
+
+
