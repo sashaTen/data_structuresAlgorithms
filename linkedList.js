@@ -1,80 +1,114 @@
-class    Node  {
-    constructor(element) {
-        this.data   =  element
-        this.next  =    null
-        
+let   head 
+//console.log(head);
+class  Node{
+    constructor(data){
+            this.data   =   data
+            this.next   =  null
     }
-    
 }
 
 
-class    LinkedList{
-   constructor(){
-    this.head =    {
-        next  :   null
-    }
-    this.size  =  0;
-    this.tail   =   null;
-   }
-   add(element){
-    let  node   =  new   Node(element)
-    let    current  
-    if(this.head ==0){
-        this.head =   node
-    }else   {
-        
-        current =   this.head
-        while(current.next){
-            current=   current.next
-        }
-         current.next =    node
-    }
-
-    this.size++;
-   }
 
 
-     insert(element ,   index){
-        if(index   -  this.size==1 ){
-            this.add(element)
-        }
-        else  if (index ==0){
-            let  node   =   new  Node(element)
-            node.next=     this.head.next
-            this.head.next =   node
-            this.size++
-        }
-
-
-        else   {
-            this.size++;
-            let  node =  new   Node(element)
-            let  current  =  this.head
-            let  count   = 0
-            while(count <   index){
-                count++
-                current = current.next
-            }
-            node.next = current.next
-            current.next = node
-        }
-         
-    
-     }
-
-
-
+function    push(value){
+let    firstNode =    new  Node(value)
+firstNode.next  =  head
+head =    firstNode   
 
 }
 
 
 
 
-let list   =   new  LinkedList()
-list.add(100)
-list.add(100)
-list.add(100)
-list.add(100)
-list.insert(999,3)
+function    insertLast(value){
+    const    elt   =   new Node(value)
+    if (head===null){
+        elt.next =     head
+        head =   elt
+    }
 
-console.log(list);
+
+    let last   =   head
+    while(last.next){
+        last =   last.next
+    }
+    last.next =    elt
+    elt.next   =   null
+}
+
+
+
+/*  
+global    head    is  undefiene   initially
+then   we  create  new node with   value 1 
+new  node's next   refers  to  head   and   becomes  undefined
+and   the  head  will  refer  to   new   node  which   has   value   of  1
+
+then    we  declare second   elt   which   value is  2
+it's  next   will  refer  to  head  which  value  is   1 
+and the the head   will  refer to   elt which   value  is   2
+
+*/
+
+function   findNodeByValue(value){
+    let  current   =    head
+    while(current.data !==value){
+        current =  current.next
+    }
+    
+    return   current
+    
+   
+}
+
+
+function   removeByValue(value){
+    let    node    =    findNodeByValue(value)
+   // console.log(node);   
+    let    prev =  head
+    while(prev.next!==node){
+       prev =  prev.next
+    }
+    prev.next =   node.next
+    node =  null
+   // console.log(prev);
+    
+}
+
+ 
+
+function  insertAfter(prevNODEvalue ,   value){
+    let   prevNode  =    findNodeByValue(prevNODEvalue)
+    const    elt    =    new    Node(value)
+    elt.next =    prevNode.next
+    prevNode.next =     elt
+}
+
+
+
+push(1)
+push(2)
+push(3)
+push(4)
+push(5)
+insertLast(90)
+insertAfter(2 ,     1513)
+removeByValue(1513)
+console.log(head);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
