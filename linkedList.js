@@ -55,6 +55,7 @@ function   findNodeByValue(value){
     while(current.data !==value){
         current =  current.next
     }
+
     
     return   current
     
@@ -84,6 +85,22 @@ function  insertAfter(prevNODEvalue ,   value){
     prevNode.next =     elt
 }
 
+function   findLength(){
+    let  count 
+    if(head.next){
+        count =  1
+    }else  if(head.next==null)   {
+        count=0
+    }
+    let  current  =   head
+    while(current.next){
+        current =  current.next
+        count++;
+    }
+    return   count
+
+}
+
 
 
 push(1)
@@ -91,10 +108,9 @@ push(2)
 push(3)
 push(4)
 push(5)
-insertLast(90)
-insertAfter(2 ,     1513)
-removeByValue(1513)
-console.log(head);
+
+
+console.log(findLength());
 
 
 
