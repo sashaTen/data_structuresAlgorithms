@@ -112,7 +112,29 @@ function   recFINDlength(node){
     return   1+   recFINDlength(node.next)
 }
 
+function   findNODEbyNUMBER(number){
 
+let    length    =   findLength()
+let  current  =  head
+let  count =  0
+if(number   ===0){
+    return    head
+}
+if(number>    length){
+    return    " the   number  exceeds  the  size  of  list "
+}else   {
+    while(current.next){
+        count++
+        current =  current.next
+        if(count   ===number){
+            return   current
+        }
+    
+}
+
+
+}
+}
 
 push(1)
 push(2)
@@ -121,7 +143,7 @@ push(4)
 push(5)
 
 
-console.log(recFINDlength(head));
+console.log(findNODEbyNUMBER(0));
 
 
 
