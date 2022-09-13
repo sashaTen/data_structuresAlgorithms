@@ -94,11 +94,22 @@ function   findLength(){
     }
     let  current  =   head
     while(current.next){
-        current =  current.next
         count++;
+        current =  current.next
     }
     return   count
 
+}
+
+
+
+function   recFINDlength(node){
+    if(node==null){
+        return   0
+
+    }
+
+    return   1+   recFINDlength(node.next)
 }
 
 
@@ -110,7 +121,7 @@ push(4)
 push(5)
 
 
-console.log(findLength());
+console.log(recFINDlength(head));
 
 
 
