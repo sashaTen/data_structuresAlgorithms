@@ -120,6 +120,8 @@ function   deleteWHOLElist(){
 }
 
 
+
+
 function   findNODEbyNUMBER(number){
 
 let    length    =   findLength()
@@ -144,14 +146,45 @@ if(number>    length){
 }
 }
 
+
+
+
+
+
+function    getNthNODEfromEND(number){
+    const   length   =    findLength()    
+    if(number>   length){
+        return   "too  big"
+    }
+    else   {
+        let Nth    =   length -  number;
+        let  current  =   head
+        let  count =0
+        while(current.next){
+            count++
+            current =current.next
+            if(count==Nth){
+             return    current
+            }
+        }
+    }
+   
+}
+
 push(1)
 push(2)
 push(3)
 push(4)
 push(5)
 
-deleteWHOLElist()
-console.log(findNODEbyNUMBER(0));
+push(11)
+push(12)
+push(13)
+push(14)
+push(15)
+
+
+console.log(getNthNODEfromEND(8));
 
 
 
