@@ -112,6 +112,14 @@ function   recFINDlength(node){
     return   1+   recFINDlength(node.next)
 }
 
+
+function   deleteWHOLElist(){
+    head.next =  null
+    head.data =   null
+    return    head
+}
+
+
 function   findNODEbyNUMBER(number){
 
 let    length    =   findLength()
@@ -142,7 +150,7 @@ push(3)
 push(4)
 push(5)
 
-
+deleteWHOLElist()
 console.log(findNODEbyNUMBER(0));
 
 
