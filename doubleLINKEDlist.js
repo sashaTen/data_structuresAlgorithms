@@ -54,6 +54,28 @@ function   returnLENGTH(){
 }
 
 
+function   returnNODEbyINDEX(index){
+let   length =   returnLENGTH()
+if (index>   length){
+    return   "too  big"
+}
+else if(index<0)  {
+return    "index  must be  positive  number"
+}else   {
+let  count   =  0
+let  current =  head
+while(current.next){
+    current = current.next 
+    count++
+    if(count===index){
+        return   current
+    }
+}
+
+}
+
+}
+
 
 push(0)
 push(1)
@@ -64,5 +86,5 @@ push(4)
 push(485)
 push(99996)
 returnLASTnode()
-console.log(returnLENGTH());
+console.log(returnNODEbyINDEX(8));
 
