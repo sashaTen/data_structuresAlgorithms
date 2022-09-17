@@ -43,7 +43,15 @@ function    push(value){
     node.prev =   last
 }
 
-
+function   returnLENGTH(){
+    let  length =   0;
+    let   tail   =  head
+    while(tail.next){
+        length++
+        tail =  tail.next
+    }
+    return   length
+}
 
 
 
@@ -56,5 +64,5 @@ push(4)
 push(485)
 push(99996)
 returnLASTnode()
-console.log(head);
+console.log(returnLENGTH());
 
