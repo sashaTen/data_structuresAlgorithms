@@ -171,6 +171,23 @@ function    getNthNODEfromEND(number){
    
 }
 
+
+function   pop(){
+let   last   =    head
+while(last.next){
+    last=    last.next
+
+}   
+return last 
+}
+
+
+
+
+
+
+
+push(1331)
 push(1)
 push(2)
 push(3)
@@ -184,7 +201,7 @@ push(14)
 push(15)
 
 
-console.log(getNthNODEfromEND(8));
+console.log(pop());
 
 
 
