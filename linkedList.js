@@ -202,21 +202,19 @@ function  putBIGGESTinEND(){
 
 function  selectionSORT(){
 let  length    =   findLength()
-secondLIST =  head 
-//head   =  null
-let count = 0
+
 for(let  i=0    ;  i  < length ;  i++){
 putBIGGESTinEND()    
 
 }
-return count
-}
 
+}
 
 
 insertLast(1)
 insertLast(200)
 insertLast(300)
+insertLast(1999)
 insertLast(2)
 insertLast(3)
 insertLast(1220)
