@@ -1,6 +1,33 @@
 let   head 
-//console.log(head);
+
 let   secondLIST
+
+
+function    insertLast2(value){
+    const    elt   =   new Node(value)
+    if (!secondLIST){
+    
+    
+        secondLIST =  elt
+    }
+   else   {
+    let last   =   secondLIST
+    while(last.next){
+        last =   last.next
+    }
+    last.next =    elt
+    elt.next   =   null
+   }
+   
+}
+
+
+
+
+
+
+
+
 class  Node{
     constructor(data){
             this.data   =   data
@@ -11,10 +38,10 @@ class  Node{
 
 
 
-function    push(value){
+function    push(value  ,   linkedHEAD){
 let    firstNode =    new  Node(value)
-firstNode.next  =  head
-head =    firstNode   
+firstNode.next  =  linkedHEAD
+linkedHEAD =    firstNode   
 
 }
 
@@ -186,6 +213,15 @@ beforeLAST.next =  null
 return last
 }
 
+function   returnLASTnode(){
+    let   last   =  head;
+    while(last.next){
+        last =   last.next
+    }
+    return last
+}
+
+
 function  putBIGGESTinEND(){
     let   biggest   =  head
     while(biggest.next){
@@ -199,6 +235,12 @@ function  putBIGGESTinEND(){
     return  biggest
 }
 
+function  mergeLISTS(){
+    let last   =   returnLASTnode()
+    last.next =   secondLIST
+    selectionSORT()
+
+}
 
 function  selectionSORT(){
 let  length    =   findLength()
@@ -210,7 +252,6 @@ putBIGGESTinEND()
 
 }
 
-
 insertLast(1)
 insertLast(200)
 insertLast(300)
@@ -219,13 +260,13 @@ insertLast(2)
 insertLast(3)
 insertLast(1220)
 insertLast(4)
-selectionSORT()
-
+insertLast2(180)
+insertLast2(185)
+insertLast2(186)
+insertLast2(188)
+insertLast2(1800)
+mergeLISTS()
 console.log(head);
-
-
-
-
 
 
 
