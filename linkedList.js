@@ -1,5 +1,6 @@
 let   head 
 //console.log(head);
+let   secondLIST
 class  Node{
     constructor(data){
             this.data   =   data
@@ -200,11 +201,15 @@ function  putBIGGESTinEND(){
 
 
 function  selectionSORT(){
-    let arr = []
-    putBIGGESTinEND()
-    arr.push(pop())
-  
-   return  arr
+let  length    =   findLength()
+secondLIST =  head 
+//head   =  null
+let count = 0
+for(let  i=0    ;  i  < length ;  i++){
+putBIGGESTinEND()    
+
+}
+return count
 }
 
 
@@ -216,9 +221,9 @@ insertLast(2)
 insertLast(3)
 insertLast(1220)
 insertLast(4)
+selectionSORT()
 
-
-console.log(selectionSORT());
+console.log(head);
 
 
 
