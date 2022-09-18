@@ -174,14 +174,38 @@ function    getNthNODEfromEND(number){
 
 function   pop(){
 let   last   =    head
+let   beforeLAST =   last
 while(last.next){
-    last=    last.next
-
+    beforeLAST =   last
+    last =    last.next
 }   
-return last 
+beforeLAST.next =  null
+return last
 }
 
+/*
+  if(biggest.data  >     biggest.next.data){
+            let temp   =    biggest
+              biggest =  biggest.next
+            biggest.next  =  temp
+        }
+        else {
+            biggest = biggest.next
+        }
 
+*/
+function  selectionSORT(){
+    let   biggest   =  head
+    while(biggest.next){
+        if(biggest.data  >     biggest.next.data){
+            let temp   =    biggest.data
+            biggest.data =  biggest.next.data
+            biggest.next.data =  temp
+        }
+        biggest =     biggest.next
+    }
+    return  biggest
+}
 
 
 
@@ -194,14 +218,15 @@ push(3)
 push(4)
 push(5)
 
+push(99999999)
 push(11)
 push(12)
 push(13)
+push(13311)
 push(14)
 push(15)
 
-
-console.log(pop());
+console.log(selectionSORT());
 
 
 
