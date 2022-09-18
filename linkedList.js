@@ -22,18 +22,20 @@ head =    firstNode
 
 function    insertLast(value){
     const    elt   =   new Node(value)
-    if (head===null){
-        elt.next =     head
-        head =   elt
+    if (!head){
+    
+    
+        head =  elt
     }
-
-
+   else   {
     let last   =   head
     while(last.next){
         last =   last.next
     }
     last.next =    elt
     elt.next   =   null
+   }
+   
 }
 
 
@@ -183,18 +185,7 @@ beforeLAST.next =  null
 return last
 }
 
-/*
-  if(biggest.data  >     biggest.next.data){
-            let temp   =    biggest
-              biggest =  biggest.next
-            biggest.next  =  temp
-        }
-        else {
-            biggest = biggest.next
-        }
-
-*/
-function  selectionSORT(){
+function  putBIGGESTinEND(){
     let   biggest   =  head
     while(biggest.next){
         if(biggest.data  >     biggest.next.data){
@@ -208,23 +199,24 @@ function  selectionSORT(){
 }
 
 
+function  selectionSORT(){
+    let arr = []
+    putBIGGESTinEND()
+    arr.push(pop())
+  
+   return  arr
+}
 
 
 
-push(1331)
-push(1)
-push(2)
-push(3)
-push(4)
-push(5)
+insertLast(1)
+insertLast(200)
+insertLast(300)
+insertLast(2)
+insertLast(3)
+insertLast(1220)
+insertLast(4)
 
-push(99999999)
-push(11)
-push(12)
-push(13)
-push(13311)
-push(14)
-push(15)
 
 console.log(selectionSORT());
 
