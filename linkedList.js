@@ -235,10 +235,27 @@ function  putBIGGESTinEND(){
     return  biggest
 }
 
+function  putLEASTinEND(){
+    let   least   =  head
+    while(least.next){
+        if(least.data  <     least.next.data){
+            let temp   =   least.data
+            least.data =  least.next.data
+            least.next.data =  temp
+        }
+        least =     least.next
+    }
+    return  least
+}
+
+
+
+
 function  mergeLISTS(){
     let last   =   returnLASTnode()
     last.next =   secondLIST
-    selectionSORT()
+//    selectionSORT()
+ selectionSORTAscending()
 
 }
 
@@ -252,8 +269,19 @@ putBIGGESTinEND()
 
 }
 
+function  selectionSORTAscending(){
+
+    let  length    =   findLength()
+
+    for(let  i=0    ;  i  < length ;  i++){
+    putLEASTinEND()    
+    
+    }
+
+}
+
 insertLast(1)
-insertLast(200)
+insertLast(-200)
 insertLast(300)
 insertLast(1999)
 insertLast(2)
@@ -266,6 +294,7 @@ insertLast2(186)
 insertLast2(188)
 insertLast2(1800)
 mergeLISTS()
+
 console.log(head);
 
 
