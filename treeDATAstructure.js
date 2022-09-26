@@ -73,10 +73,32 @@ else  if (value>    currentnode.value){
 
 }
 
+findPARENT(  value){
+let temp  =   this.root
+let   parent   =  temp
+while(temp!==null){
+    if(value  === temp.value){
+        return   parent
+    }
+    else  if (value    >   temp.value){
+    if(temp.right){
+    parent   =   temp    
+    temp= temp.right
+        
+    }else  {
+        return  "not  found"
+    }
 
-
-deleteNODEbyVALUE(value){
-
+    }else  if (value<   temp.value){
+         if (temp.left){
+            parent   =   temp
+            temp =  temp.value
+         }
+         else  {
+            return  "not  found"
+        }
+    }
+}
 }
 
 
@@ -87,11 +109,13 @@ let  tree  =  new   TREE()
 tree.insert(500)
 tree.insert(98)
 tree.insert(8)
+tree.insert(1)
+tree.insert(10)
 tree.insert(10000)
 tree.insert(9000)
 tree.insert(12000)
+tree.insert(800)
 //console.log(tree.searchNODEbyVALUE(98 ,   tree.returnROOT() ));
-//console.log(tree);
-
+//console.log(tree.findPARENT(98));
 
 
